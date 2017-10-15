@@ -1,5 +1,5 @@
 alias pc='proxychains -q'
-Alias ls='ls --color=auto -h'
+alias ls='ls --color=auto -h'
 alias stopx='kill -9 $(pidof cinnamon-session)'
 alias e='emacs -nw'
 alias ew='emacs'
