@@ -99,4 +99,7 @@
 ;; 编码修改为UTF-8
 (set-language-environment "UTF-8")
 
+;; 取消编辑符号链接文件的提示
+(setq vc-follow-symlinks 1)
+
 (provide 'init-better-defaults)
