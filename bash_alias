@@ -1,14 +1,3 @@
-alias pc='proxychains -q'
-alias ls='ls --color=auto -h'
-alias stopx='kill -9 $(pidof cinnamon-session)'
 alias e='emacs -nw'
 alias ew='emacs'
-alias pyenv='source /home/zhou/Projects/miniconda2/bin/activate'
-alias pydenv='source /home/zhou/Projects/miniconda2/bin/deactivate'
 alias ufw='sudo /usr/bin/ufw'
-alias y='proxychains -q yaourt'
-alias ys='proxychains -q yaourt -S'
-alias ysua='sudo proxychains -q /usr/bin/reflector \
-      		 -c China --save /etc/pacman.d/mirrorlist \
-      && cat /etc/pacman.d/mirrorlist \
-      && proxychains -q yaourt -Syyua'
