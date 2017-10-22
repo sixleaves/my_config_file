@@ -202,7 +202,6 @@ var white_domains = {"am":{
 "xiapu":1,
 "ychdzx":1
 },"com":{
-"fanqianbb":1,
 "0-6":1,
 "0001688":1,
 "001cndc":1,
@@ -3301,6 +3300,7 @@ var white_domains = {"am":{
 "famensi":1,
 "fancai":1,
 "fandian":1,
+"fanqianbb":1,
 "fang":1,
 "fang33":1,
 "fang99":1,
