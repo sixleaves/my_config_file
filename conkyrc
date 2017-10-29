@@ -76,8 +76,8 @@ ${color2}${font :bold:size=12}[SSD] $font$color
 ${fs_bar /}
 /tmp $alignr ${fs_used /tmp} of ${fs_size /tmp} (${fs_used_perc /tmp}%)
 ${fs_bar /tmp}
-swap $alignr $swap of $swapmax ($swapperc%)
-$swapbar
+#swap $alignr $swap of $swapmax ($swapperc%)
+#$swapbar
 
 # 显示网络使用情况
 ${color2}${font :bold:size=12}[NETWORK] $font$color
