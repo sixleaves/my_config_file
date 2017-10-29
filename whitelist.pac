@@ -202,6 +202,8 @@ var white_domains = {"am":{
 "xiapu":1,
 "ychdzx":1
 },"com":{
+"gensee":1,
+"idqqimg":1,
 "fliggy":1,
 "0-6":1,
 "0001688":1,
