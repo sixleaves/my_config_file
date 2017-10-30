@@ -4,8 +4,8 @@ var direct = "DIRECT;";
 var ip_proxy = "DIRECT;";
 
 /*
- * Copyright (C) 2014 breakwa11
- * https://github.com/breakwa11/gfw_whitelist
+ * GFW 白名单，使用方法查看 https://github.com/breakwa11/gfw_whitelist
+ * 这个文件添加了个人常用的域名
  */
 
 var white_domains = {"am":{
