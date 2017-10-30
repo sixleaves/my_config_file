@@ -202,6 +202,7 @@ var white_domains = {"am":{
 "xiapu":1,
 "ychdzx":1
 },"com":{
+"coolapk":1,
 "gensee":1,
 "imooc":1,
 "idqqimg":1,
