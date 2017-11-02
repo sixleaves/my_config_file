@@ -80,6 +80,17 @@
 ;; 防止C-x C-x卡在clipboard-manager
 (setq x-select-enable-clipboard-manager nil)
 
+;; web-mode config
+(defun my-web-mode-indent-setup ()
+  (setq web-mode-markup-indent-offset 2)
+  (setq web-mode-css-indent-offset 2)
+  (setq web-mode-code-indent-offset 2)
+  )
+(add-hook 'web-mode-hook 'my-web-mode-indent-setup)
+;; js2-refactor config
+(add-hook 'js2-mode-hook #'js2-refactor-mode)
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
 ;; 括号高亮显示
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 

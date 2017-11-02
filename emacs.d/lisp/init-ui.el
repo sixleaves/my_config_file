@@ -11,10 +11,10 @@
 ;; (setq initial-frame-alist '((fullscreen . maximized)))
 
 ;; 字体大小
-(set-default-font "WenQuanYi Micro Hei Mono 12")
+(set-default-font "14")
 
 ;; 修改光标
-(setq-default cursor-type 'bar)
+(setq-default cursor-type 'hbar)
 ;; ----------------------------------------
 
 ;; 开启组合键提示
@@ -36,7 +36,6 @@
 (display-time-mode 1)
 (setq display-time-24hr-format 1)
 (setq display-time-day-and-date 1)
-
 
 
 (provide 'init-ui)

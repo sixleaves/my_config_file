@@ -20,7 +20,11 @@
     counsel ;; 增强打开文件
     smartparens ;; 自动补全括号
     ;; --- Major Mode ---
+    js2-mode
+    web-mode
     markdown-mode
+    ;; ---  ---
+    js2-refactor
     ;; --- Themes ---
     monokai-theme
     )
@@ -39,6 +43,9 @@
      (dolist (pkg zhou/packages)
        (when (not (package-installed-p pkg))
 	 (package-install pkg))))
-
-
+(setq auto-mode-alist
+      (append
+       '(("\\.html\\'" . web-mode))
+       '(("\\.js\\'" . js2-mode))
+       auto-mode-alist))
 (provide 'init-packages) 
