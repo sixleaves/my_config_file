@@ -30,7 +30,7 @@
 (global-hl-line-mode 1)
 
 ;; 设置主题
-(load-theme 'monokai 1)
+(load-theme 'material 1)
 
 ;; 状态栏显示时间
 (display-time-mode 1)

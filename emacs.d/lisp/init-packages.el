@@ -1,8 +1,14 @@
 
 (require 'package)
 (package-initialize)
-(setq package-archives '(("gnu" . "http://elpa.emacs-china.org/gnu/")
-			     ("melpa" . "http://elpa.emacs-china.org/melpa/")))
+
+;; 设置代理
+(setq url-proxy-services
+      '(("http" . "127.0.0.1:1080")
+	("https" . "127.0.0.1:1080")))
+
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("MELPA Stable" . "http://stable.melpa.org/packages/")))
 
 ;; cl - Common Lisp Extension
 (require 'cl)
@@ -12,6 +18,9 @@
   '(
     use-package
     company ;;自动 补全
+    ;; python
+    elpy
+    flycheck
     ;; --- Better Editor ---
     smooth-scrolling
     which-key ;; 显示当前组合件下所有可用的组合键
@@ -19,6 +28,7 @@
     swiper ;; 增强查找
     counsel ;; 增强打开文件
     smartparens ;; 自动补全括号
+    expand-region
     ;; --- Major Mode ---
     js2-mode
     web-mode
@@ -26,7 +36,7 @@
     ;; ---  ---
     js2-refactor
     ;; --- Themes ---
-    monokai-theme
+    material-theme
     )
   "Default packages")
 

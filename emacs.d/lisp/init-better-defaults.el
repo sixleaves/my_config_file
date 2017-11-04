@@ -77,6 +77,9 @@
   (global-hungry-delete-mode)
   )
 
+;; python
+(elpy-enable)
+
 ;; 防止C-x C-x卡在clipboard-manager
 (setq x-select-enable-clipboard-manager nil)
 
@@ -100,6 +103,10 @@
 	(t (save-excursion
 	     (ignore-errors (backward-up-list))
 	     (funcall fn)))))
+
+(when (require 'flycheck nil t)
+  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+  (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 ;; 自动删除windows的换行符
 (defun remove-dos-eol ()
