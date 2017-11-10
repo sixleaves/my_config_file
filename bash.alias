@@ -1,0 +1,18 @@
+alias ufw='sudo /usr/bin/ufw'
+alias pc='proxychains -q'
+#alias ls='ls --color=auto -h -l'
+alias stopx='kill -9 $(pidof Xorg)'
+alias df='df -h'
+alias pyenv='source /opt/miniconda2/bin/activate'
+alias pydenv='source /opt/miniconda2/bin/deactivate'
+#alias conda='/opt/miniconda2/bin/conda'
+
+alias y='yaourt'
+alias yr='yaourt -Rns'
+alias ys='proxychains -q yaourt -S'
+alias ysu='yaourt -Syyu'
+alias ysua='
+#       sudo proxychains -q systemctl start reflector && \
+         yaourt -Syyu \
+        && proxychains -q yaourt -Sua'
+
