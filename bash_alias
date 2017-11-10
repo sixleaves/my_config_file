@@ -1,3 +1,0 @@
-alias e='emacs -nw'
-alias ew='emacs'
-alias ufw='sudo /usr/bin/ufw'

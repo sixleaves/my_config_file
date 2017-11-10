@@ -12,6 +12,6 @@ fi
 
 source $ZSH/oh-my-zsh.sh
 source /etc/profile
-source /home/zhou/.bash_alias
+source /home/zhou/.bash.alias
 source /home/zhou/.bash_profile 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
